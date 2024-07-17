@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brouse on your modal || Be the best</title>
+    <link rel="stylesheet" href="/icons/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+    <body>
+        <button class="model-btn">show model</button>
+        
+            <div class="model hidden">
+                <button class="model-times"><i class="fa fa-times"></i></button>
+                <h1>learn how to close model JS</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facere ipsa, sunt suscipit quibusdam consequuntur rem nisi 
+                    unde sint minus commodi delectus ratione, modi eaque error sit 
+                    tempore temporibus architecto sapiente reprehenderit 
+                    maxime magni itaque culpa. Accusantium iusto ad pariatur nam 
+                    quam, illo excepturi culpa consequuntur nobis, quos architecto est eligendi.
+                </p>
+
+                <button class="read-more">Use Shasy Calco</button>
+                <button class="watch-video-btn">watch vidoe</button>
+            </div>
+
+            <div class="video-container">
+                <button class="times2 hidden"><i class="fa fa-times"></i></button>
+                <video class="video hidden" controls src="/Thank You.mp4"></video>
+            </div>
+
+            <div class="layer hidden"></div>
+
+
+            <!-- calculator section -->
+
+            <div id="calculator" class="calco hidden">
+                <button class="times3 hidden"><i class="fa fa-times"></i></button>
+
+                <div id="calculator-top-content">
+    
+                    <div id="logo">
+                        <div class="text-logo">
+                            <div id="logo-text">
+                                <p>
+                                    shasy
+                                </p>
+                            </div>
+                            <div id="main-logo">
+                                <p>
+                                    camo
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="vertical-line"></div>
+    
+                        <div class="icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+    
+                    <div id="calculator-style"></div>
+    
+                </div>
+    
+                <input id="input" readonly>
+    
+                <div id="btns">
+                    <button onclick="mainBtnDisplay('7')">7</button>
+                    <button onclick="mainBtnDisplay('8')">8</button>
+                    <button onclick="mainBtnDisplay('9')">9</button>
+                    <button onclick="mainBtnDisplay('+')" class="operator">+</button>
+                    <button onclick="mainBtnDisplay('4')">4</button>
+                    <button onclick="mainBtnDisplay('5')">5</button>
+                    <button onclick="mainBtnDisplay('6')">6</button>
+                    <button onclick="mainBtnDisplay('-')" class="operator">-</button>
+                    <button onclick="mainBtnDisplay('1')">1</button>
+                    <button onclick="mainBtnDisplay('2')">2</button>
+                    <button onclick="mainBtnDisplay('3')">3</button>
+                    <button onclick="mainBtnDisplay('*')" class="operator">*</button>
+                    <button onclick="mainBtnDisplay('0')">0</button>
+                    <button onclick="mainBtnDisplay('.')">.</button>
+                    <button onclick="mainBtnDisplay('/')" class="operator">/</button>
+    
+                    <button onclick="clearInput()" class="operator">C</button>
+                    <button onclick="calculate()" class="operator">=</button>
+                </div>
+            </div>
+
+        <script src="/script.js"></script>
+    </body>
+</html>

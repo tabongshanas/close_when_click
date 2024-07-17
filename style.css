@@ -1,0 +1,254 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.model {
+    width: 500px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 10px 10px 8px rgba(0,0,0,0.2);
+}
+.model h1 {
+    font-size: 20px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.model-times {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    float: right;
+    cursor: pointer;
+}
+
+.model-btn {
+    padding: 15px 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    margin-top: 50px;
+    /* position: relative;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.layer {
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 20%);
+    backdrop-filter: blur(5px);
+    position: relative;
+    top: -110px;
+}
+
+.read-more {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.watch-video-btn {
+    padding: 15px 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.watch-video-btn:hover,
+.read-more:hover {
+    background-color: rgba(128, 128, 128, 0.356);
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 85%;
+    z-index: 1000;
+}
+.times2 {
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    margin-right: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+
+
+/* css of calculator section */
+:root {
+    --primary-color: rgb(35%, 100%, 55%);
+    --primary-color-hover: rgb(35%, 100%, 65%);
+    --input-screen-color: 99FF33;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: scroll;
+    background-color: rgba(75, 75, 75, 0.164);
+}
+#calculator {
+    width: 500px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.575);
+    border-radius: 20px;
+    background-color: grey;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    z-index: 100000;
+    position: absolute;
+}
+
+#calculator-top-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+#logo-text,
+#main-logo {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#calculator-style {
+    padding: 20px 60px;
+    border-radius: 8px;
+    box-shadow: inset 1px 1px 30px rgba(0, 0, 0, 0.877);
+}
+
+.vertical-line {
+    background-color: black;
+    width: 5px;
+    height: 100%;
+    margin: 0 10px;
+}
+.icon i {
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#main-logo {
+    color: var(--primary-color);
+}
+#btns {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1rem;
+    margin-top: 30px;
+    place-items: center;
+}
+#input {
+    width: 100%;
+    padding: 30px 20px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 70%);
+    box-shadow: inset 1px 1px 20px rgb(0, 0, 0);
+}
+#btns .operator {
+    background-color: var(--primary-color);
+    color: black;
+}
+#btns .operator:hover {
+    background-color: var(--primary-color-hover);
+}
+#btns .operator:active {
+    background-color: rgb(35%, 100%, 80%);
+}
+#calculator button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(0, 0%, 0%);
+    cursor: pointer;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.644);
+}
+#calculator button:hover {
+    background-color: hsl(0, 0%, 70%);
+    color: black;
+}
+#calculator button:active {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.times3 {
+    position: absolute;
+    right: -200px;
+    top: 20px;
+}
+
+
+@media(max-width: 555px) {
+    .model {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width: 430px) {
+    #calculator {
+        width: 100%;
+    }
+    #calculator button {
+        width: 65px;
+        height: 65px;
+    }
+    #input {
+        font-size: 28px;
+        padding: 25px 20px;
+    }
+}
+/* end css of calculator section */
+
+
+.hidden {
+    display: none;
+}
